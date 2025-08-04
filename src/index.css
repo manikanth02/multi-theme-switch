@@ -1,13 +1,22 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* Theme 1 - Minimalist Light Theme */
+body.theme1 {
+  @apply bg-white text-gray-900 font-sans;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Theme 2 - Dark with Sidebar Feel */
+body.theme2 {
+  @apply bg-gray-900 text-white font-serif;
+}
+
+/* Theme 3 - Colorful + Playful */
+body.theme3 {
+  @apply bg-yellow-100 text-pink-900;
+  font-family: 'Pacifico', cursive;
 }

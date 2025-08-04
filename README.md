@@ -1,46 +1,47 @@
-# Getting Started with Create React App
+#  Multi-Theme React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hey there! 
+This is a React app I built theme switching using **TypeScript**, **Tailwind CSS**, and the **Context API**. It also uses **React Router** for navigation and fetches products from the FakeStore API just to keep things realistic. No big UI libraries like MUI or AntD — I wanted to keep everything lightweight and custom.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+##  Features
 
-### `npm start`
+- Three themes to try out (Light, Dark Sidebar, and a playful one)
+- Theme stays saved even after refreshing the page (Used `localStorage`)
+- Simple and smooth animations when switching themes
+- Fully responsive — works well on mobile and desktop
+- Theme state is managed using React’s Context API
+- Pages: Home, About, Contact, and a fallback 404 page
+- Data fetched from https://fakestoreapi.com/products
+- Built completely using **TypeScript**
+- No unnecessary UI frameworks — just raw Tailwind and React
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 📸 What It Looks Like
 
-### `npm test`
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠 Tech Stack
 
-### `npm run build`
+- React + TypeScript
+- Tailwind CSS
+- React Router
+- Context API
+- FakeStoreAPI
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To run this on your local machine:
 
-### `npm run eject`
+1. Clone the repo:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+git clone https://github.com/your-username/react-theme-app.git
+cd react-theme-app

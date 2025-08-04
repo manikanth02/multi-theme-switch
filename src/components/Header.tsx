@@ -4,6 +4,7 @@ import { useTheme } from '../context/ThemeContext';
 const Header = () => {
   const { theme, setTheme } = useTheme();
 
+  // Here,we have dynamically apply background and text colors based on the selected theme
   const bgClass =
     theme === 'theme2'
       ? 'bg-gray-800 text-white'
@@ -17,17 +18,18 @@ const Header = () => {
     >
       <div className="font-bold text-xl">🌗 Theme App</div>
       <div className="flex items-center gap-4">
-      <select
-  value={theme}
-  onChange={(e) => setTheme(e.target.value as any)}
-  className={`border px-2 py-1 rounded
-    ${
-      theme === 'theme2'
-        ? 'bg-gray-700 text-white border-gray-600'
-        : theme === 'theme3'
-        ? 'bg-yellow-200 text-pink-900 border-yellow-400'
-        : 'bg-white text-gray-900 border-gray-300'
-    }`}
+        {/* We dynamically change the styles of the select box based on the current theme */}
+        <select
+        value={theme}
+        onChange={(e) => setTheme(e.target.value as any)}
+        className={`border px-2 py-1 rounded
+            ${
+            theme === 'theme2'
+                ? 'bg-gray-700 text-white border-gray-600'
+                : theme === 'theme3'
+                ? 'bg-yellow-200 text-pink-900 border-yellow-400'
+                : 'bg-white text-gray-900 border-gray-300'
+            }`}
 >
 
           <option value="theme1">Theme 1</option>

@@ -18,7 +18,7 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
       setThemeState(storedTheme);
       document.body.classList.add(storedTheme);
     } else {
-      document.body.classList.add('theme1'); // default
+      document.body.classList.add('theme1');
     }
   }, []);
 

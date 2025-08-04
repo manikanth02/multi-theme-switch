@@ -45,3 +45,18 @@ To run this on your local machine:
 ```bash
 git clone https://github.com/your-username/react-theme-app.git
 cd react-theme-app
+```
+
+2. Install the dependencies:
+
+```bash
+npm install
+# or
+npm i
+```
+
+
+3.Start the dev server:
+```bash
+npm run dev
+```

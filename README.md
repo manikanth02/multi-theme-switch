@@ -1,3 +1,6 @@
+MANISH KUMAR(React Developer)
+
+
 #  Multi-Theme React App
 
 Hey there! 

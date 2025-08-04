@@ -11,13 +11,25 @@ const Home = () => {
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
 
+  const fetchProducts = async () => {
+    try {
+      setLoading(true);
+      const response = await fetch('https://fakestoreapi.com/products');
+      if (!response.ok) {
+        throw new Error(`Error in FetchProduct API! Status: ${response.status}`);
+      }
+      const data = await response.json();
+      setProducts(data);
+    } catch (error) {
+      console.error('Failed to fetch products:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+  
+
   useEffect(() => {
-    fetch('https://fakestoreapi.com/products')
-      .then((res) => res.json())
-      .then((data) => {
-        setProducts(data);
-        setLoading(false);
-      });
+    fetchProducts();
   }, []);
 
   return (
